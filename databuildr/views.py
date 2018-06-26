@@ -7,12 +7,18 @@ from flask import render_template
 from databuildr import app
 
 contactInfo = {
-    'email':'archtect@databuildr.com',
+
+    'email':'architect@databuildr.com',
     'phone':'(434) 270-0548',
-    'contactCity':'Stanardsville',
-    'contactState':'VA',
-    'contactZip':'22973'
+    'address': {
+        'street': '109 Mallard Lane',
+        'city':'Stanardsville',
+        'state':'VA',
+        'zip':'22973'
+    }
 }
+
+emailAddress = contactInfo['email']
 
 @app.route('/')
 @app.route('/home')
@@ -22,7 +28,7 @@ def home():
         'index.html',
         title='Home Page',
         year=datetime.now().year,
-        contact=contactInfo,
+        sidebar=sidebar()
     )
 
 @app.route('/experience')
@@ -75,32 +81,11 @@ def contact():
         message='Your contact page.'
     )
 
-@app.route('/edElements')
-def edElements():
-    """Renders the contact page."""
+@app.route('/snippets/sidebar')
+def sidebar():
+    """Renders the sidebar."""
     return render_template(
-        'edElements.html',
-        title='edElements',
+        'snippets/sidebar.html',
         year=datetime.now().year,
-        message='edElements.'
-    )
-
-@app.route('/edGeneric')
-def edGeneric():
-    """Renders the contact page."""
-    return render_template(
-        'edGeneric.html',
-        title='edGeneric',
-        year=datetime.now().year,
-        message='edGeneric.'
-    )
-
-@app.route('/edIndex')
-def edIndex():
-    """Renders the contact page."""
-    return render_template(
-        'edIndex.html',
-        title='edIndex',
-        year=datetime.now().year,
-        message='edIndex.'
+        contact=contactInfo,
     )
