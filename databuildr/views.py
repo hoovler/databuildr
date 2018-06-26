@@ -5,7 +5,6 @@ Routes and views for the flask application.
 from datetime import datetime
 from flask import render_template
 from databuildr import app
-from jinja2 import Template
 
 @app.route('/')
 @app.route('/home')
@@ -17,24 +16,34 @@ def home():
         year=datetime.now().year,
     )
 
-@app.route('/contact')
-def contact():
-    """Renders the contact page."""
-    return render_template(
-        'contact.html',
-        title='Contact',
-        year=datetime.now().year,
-        message='Your contact page.'
-    )
-
-@app.route('/about')
-def about():
+@app.route('/experience')
+def experience():
     """Renders the about page."""
     return render_template(
-        'about.html',
-        title='About',
+        'experience.html',
+        title='Experience',
         year=datetime.now().year,
-        message='Your application description page.'
+        message='experience'
+    )
+
+@app.route('/education')
+def education():
+    """Renders the about page."""
+    return render_template(
+        'education.html',
+        title='Education',
+        year=datetime.now().year,
+        message='education'
+    )
+
+@app.route('/skills')
+def skills():
+    """Renders the about page."""
+    return render_template(
+        'skills.html',
+        title='Skills',
+        year=datetime.now().year,
+        message='skills'
     )
 
 @app.route('/portfolio')
@@ -45,4 +54,14 @@ def portfolio():
         title='Portfolio',
         year=datetime.now().year,
         message='A sample of my work...'
+    )
+
+@app.route('/contact')
+def contact():
+    """Renders the contact page."""
+    return render_template(
+        'contact.html',
+        title='Contact',
+        year=datetime.now().year,
+        message='Your contact page.'
     )

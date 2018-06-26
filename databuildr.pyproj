@@ -37,10 +37,31 @@
     <Folder Include="databuildr\static\" />
     <Folder Include="databuildr\static\content\" />
     <Folder Include="databuildr\static\fonts\" />
+    <Folder Include="databuildr\static\images\" />
     <Folder Include="databuildr\static\scripts\" />
     <Folder Include="databuildr\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="databuildr\favicon.ico" />
+    <Content Include="databuildr\favicon.svg" />
+    <Content Include="databuildr\static\images\pic01.jpg" />
+    <Content Include="databuildr\static\images\pic02.jpg" />
+    <Content Include="databuildr\static\images\pic03.jpg" />
+    <Content Include="databuildr\static\images\pic04.jpg" />
+    <Content Include="databuildr\static\images\pic05.jpg" />
+    <Content Include="databuildr\static\images\pic06.jpg" />
+    <Content Include="databuildr\static\images\pic07.jpg" />
+    <Content Include="databuildr\static\images\pic08.jpg" />
+    <Content Include="databuildr\static\images\pic09.jpg" />
+    <Content Include="databuildr\static\images\pic10.jpg" />
+    <Content Include="databuildr\static\images\pic11.jpg" />
+    <Content Include="databuildr\static\scripts\breakpoints.min.js" />
+    <Content Include="databuildr\static\scripts\browser.min.js" />
+    <Content Include="databuildr\static\scripts\main.js" />
+    <Content Include="databuildr\static\scripts\util.js" />
+    <Content Include="databuildr\templates\experience.html" />
+    <Content Include="databuildr\templates\education.html" />
+    <Content Include="databuildr\templates\skills.html" />
     <Content Include="databuildr\templates\portfolio.html" />
     <Content Include="requirements.txt" />
     <Content Include="databuildr\static\content\bootstrap.css" />
