@@ -6,6 +6,14 @@ from datetime import datetime
 from flask import render_template
 from databuildr import app
 
+contactInfo = {
+    'email':'archtect@databuildr.com',
+    'phone':'(434) 270-0548',
+    'contactCity':'Stanardsville',
+    'contactState':'VA',
+    'contactZip':'22973'
+}
+
 @app.route('/')
 @app.route('/home')
 def home():
@@ -14,6 +22,7 @@ def home():
         'index.html',
         title='Home Page',
         year=datetime.now().year,
+        contact=contactInfo,
     )
 
 @app.route('/experience')
@@ -64,4 +73,34 @@ def contact():
         title='Contact',
         year=datetime.now().year,
         message='Your contact page.'
+    )
+
+@app.route('/edElements')
+def edElements():
+    """Renders the contact page."""
+    return render_template(
+        'edElements.html',
+        title='edElements',
+        year=datetime.now().year,
+        message='edElements.'
+    )
+
+@app.route('/edGeneric')
+def edGeneric():
+    """Renders the contact page."""
+    return render_template(
+        'edGeneric.html',
+        title='edGeneric',
+        year=datetime.now().year,
+        message='edGeneric.'
+    )
+
+@app.route('/edIndex')
+def edIndex():
+    """Renders the contact page."""
+    return render_template(
+        'edIndex.html',
+        title='edIndex',
+        year=datetime.now().year,
+        message='edIndex.'
     )
