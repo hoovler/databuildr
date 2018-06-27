@@ -1,6 +1,7 @@
 ﻿{% extends "layout.html" %}
 
 {% block sidebar %}
+
 <div id="sidebar">
     <div class="inner">
 
@@ -80,14 +81,11 @@
             </header>
             <p>Text.</p>
             <ul class="contact">
-                <li class="fa-envelope-o"><a href="#">{{ contact['email'] }}</a></li>
-                <li class="fa-phone">{{ contact['phone'] }}</li>
-                <li class="fa-home">
-                    {{ contact['address']['street'] }}<br />
-                    {{ contact['address']['city'] }}, {{ contact['address']['state'] }}. {{ contact['address']['zip'] }}
-                </li>
+                <li class="fa-envelope-o"><a href="#">{{ contactInfo['email'] }}</a></li>
+                <li class="fa-phone">{{ contactInfo['phone'] }}</li>
             </ul>
         </section>
     </div>
 </div>
+
 {% endblock %}

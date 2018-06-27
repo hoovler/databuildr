@@ -6,16 +6,18 @@ from datetime import datetime
 from flask import render_template
 from databuildr import app
 
-contactInfo = {
+pathTo = {
+    'index': 'index.html',
+    'experience': 'experience.html',
+    'education': 'education.html',
+    'skills': 'skills.html',
+    'contact': 'contact.html',
+    'sidebar': 'snippets/sidebar.html'
+}
 
+contactInfo = {
     'email':'architect@databuildr.com',
-    'phone':'(434) 270-0548',
-    'address': {
-        'street': '109 Mallard Lane',
-        'city':'Stanardsville',
-        'state':'VA',
-        'zip':'22973'
-    }
+    'phone':'(434) 270-0548'
 }
 
 emailAddress = contactInfo['email']
@@ -25,17 +27,16 @@ emailAddress = contactInfo['email']
 def home():
     """Renders the home page."""
     return render_template(
-        'index.html',
+        pathTo['index'],
         title='Home Page',
-        year=datetime.now().year,
-        sidebar=sidebar()
+        year=datetime.now().year
     )
 
 @app.route('/experience')
 def experience():
-    """Renders the about page."""
+    """Renders the experience page."""
     return render_template(
-        'experience.html',
+        pathTo['experience'],
         title='Experience',
         year=datetime.now().year,
         message='experience'
@@ -45,7 +46,7 @@ def experience():
 def education():
     """Renders the about page."""
     return render_template(
-        'education.html',
+        pathTo['education'],
         title='Education',
         year=datetime.now().year,
         message='education'
@@ -53,9 +54,9 @@ def education():
 
 @app.route('/skills')
 def skills():
-    """Renders the about page."""
+    """Renders the skills page."""
     return render_template(
-        'skills.html',
+        pathTo['skills'],
         title='Skills',
         year=datetime.now().year,
         message='skills'
@@ -75,7 +76,7 @@ def portfolio():
 def contact():
     """Renders the contact page."""
     return render_template(
-        'contact.html',
+        pathTo['contact'],
         title='Contact',
         year=datetime.now().year,
         message='Your contact page.'
@@ -85,7 +86,7 @@ def contact():
 def sidebar():
     """Renders the sidebar."""
     return render_template(
-        'snippets/sidebar.html',
+        pathTo['sidebar'],
         year=datetime.now().year,
-        contact=contactInfo,
+        contact=contactInfo
     )

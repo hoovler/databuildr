@@ -16,7 +16,7 @@
 <body>
     <!-- Sidebar -->
     {% block sidebar %}{% endblock %}
-    
+    {{ render_template('snippets/sidebar.html', contactInfo = {'email':'architect@databuildr.com', 'phone':'(434) 270-0548'}) }}
 
     <div class="container body-content">
         {% block content %}{% endblock %}
@@ -25,7 +25,6 @@
             <p>&copy; {{ year }} - Michael Hoovler, Data BuildR LLC</p>
         </footer>
     </div>
-
     <script src="/static/scripts/jquery-1.10.2.js"></script>
     <script src="/static/scripts/bootstrap.js"></script>
     <script src="/static/scripts/respond.js"></script>
