@@ -45,7 +45,7 @@
     <Folder Include="databuildr\static\sass\libs\" />
     <Folder Include="databuildr\static\scripts\" />
     <Folder Include="databuildr\templates\" />
-    <Folder Include="databuildr\templates\snippets\" />
+    <Folder Include="databuildr\templates\archive\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="databuildr\favicon.ico" />
@@ -106,14 +106,14 @@
     <Content Include="databuildr\static\scripts\browser.min.js" />
     <Content Include="databuildr\static\scripts\main.js" />
     <Content Include="databuildr\static\scripts\util.js" />
-    <Content Include="databuildr\templates\edElements.html" />
-    <Content Include="databuildr\templates\experience.html" />
-    <Content Include="databuildr\templates\education.html" />
-    <Content Include="databuildr\templates\edGeneric.html" />
-    <Content Include="databuildr\templates\edIndex.html" />
-    <Content Include="databuildr\templates\skills.html" />
-    <Content Include="databuildr\templates\portfolio.html" />
-    <Content Include="databuildr\templates\snippets\sidebar.html" />
+    <Content Include="databuildr\templates\archive\contact.html" />
+    <Content Include="databuildr\templates\index.html" />
+    <Content Include="databuildr\templates\archive\experience.html" />
+    <Content Include="databuildr\templates\archive\education.html" />
+    <Content Include="databuildr\templates\archive\portfolio.html" />
+    <Content Include="databuildr\templates\archive\skills.html" />
+    <Content Include="databuildr\templates\archive\zzzindex.html" />
+    <Content Include="databuildr\templates\archive\zzzportfolio.html" />
     <Content Include="requirements.txt" />
     <Content Include="databuildr\static\content\bootstrap.css" />
     <Content Include="databuildr\static\content\bootstrap.min.css" />
@@ -137,9 +137,8 @@
     <Content Include="databuildr\static\scripts\respond.js" />
     <Content Include="databuildr\static\scripts\respond.min.js" />
     <Content Include="databuildr\static\scripts\_references.js" />
-    <Content Include="databuildr\templates\about.html" />
-    <Content Include="databuildr\templates\contact.html" />
-    <Content Include="databuildr\templates\index.html" />
+    <Content Include="databuildr\templates\archive\zzzabout.html" />
+    <Content Include="databuildr\templates\archive\zzzcontact.html" />
     <Content Include="databuildr\templates\layout.html" />
   </ItemGroup>
   <ItemGroup>

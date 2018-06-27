@@ -15,12 +15,14 @@ pathTo = {
     'sidebar': 'snippets/sidebar.html'
 }
 
-contactInfo = {
-    'email':'architect@databuildr.com',
-    'phone':'(434) 270-0548'
+siteMeta = {
+    'title': 'The Datavangelist',
+    'author': {
+        'name': 'Michael Hoovler',
+        'email':'architect@databuildr.com',
+        'phone':'(434) 270-0548'
+    }
 }
-
-emailAddress = contactInfo['email']
 
 @app.route('/')
 @app.route('/home')
@@ -29,7 +31,8 @@ def home():
     return render_template(
         pathTo['index'],
         title='Home Page',
-        year=datetime.now().year
+        year=datetime.now().year,
+        values=siteMeta
     )
 
 @app.route('/experience')
@@ -80,13 +83,4 @@ def contact():
         title='Contact',
         year=datetime.now().year,
         message='Your contact page.'
-    )
-
-@app.route('/snippets/sidebar')
-def sidebar():
-    """Renders the sidebar."""
-    return render_template(
-        pathTo['sidebar'],
-        year=datetime.now().year,
-        contact=contactInfo
     )

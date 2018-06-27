@@ -13,22 +13,116 @@
     <script src="/static/scripts/main.js"></script>
 </head>
 
-<body>
-    <!-- Sidebar -->
-    {% block sidebar %}{% endblock %}
-    {{ render_template('snippets/sidebar.html', contactInfo = {'email':'architect@databuildr.com', 'phone':'(434) 270-0548'}) }}
+<body class="is-preload">
 
-    <div class="container body-content">
-        {% block content %}{% endblock %}
-        <hr />
-        <footer>
-            <p>&copy; {{ year }} - Michael Hoovler, Data BuildR LLC</p>
-        </footer>
-    </div>
-    <script src="/static/scripts/jquery-1.10.2.js"></script>
-    <script src="/static/scripts/bootstrap.js"></script>
-    <script src="/static/scripts/respond.js"></script>
-    {% block scripts %}{% endblock %}
+    <!-- Wrapper -->
+    <div id="wrapper">
 
+        <!-- Main -->
+        <div id="main">
+
+            {% block content %}{% endblock %}
+
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <div class="inner">
+
+                    <!-- Search -->
+                    <section id="search" class="alt">
+                        <form method="post" action="#">
+                            <input type="text" name="query" id="query" placeholder="Search" />
+                        </form>
+                    </section>
+
+                    <!-- Menu -->
+                    <nav id="menu">
+                        <header class="major">
+                            <h2>Menu</h2>
+                        </header>
+                        <ul>
+                            <li><a href="{{ url_for('home') }}">Home</a></li>
+                            <li><a href="{{ url_for('experience') }}">Experience</a></li>
+                            <li><a href="{{ url_for('education') }}">Education</a></li>
+                            <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                            <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
+                            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                            <li>
+                                <span class="opener">Portfolio</span>
+                                <ul>
+                                    <li><a href="{{ url_for('portfolio') }}">Software Engineering</a></li>
+                                    <li><a href="{{ url_for('portfolio') }}">Data Engineering</a></li>
+                                    <li><a href="{{ url_for('portfolio') }}">Technical Consulting</a></li>
+                                    <li><a href="{{ url_for('portfolio') }}">Systems Administration</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Etiam Dolore</a></li>
+                            <li><a href="#">Adipiscing</a></li>
+                            <li>
+                                <span class="opener">Another Submenu</span>
+                                <ul>
+                                    <li><a href="#">Lorem Dolor</a></li>
+                                    <li><a href="#">Ipsum Adipiscing</a></li>
+                                    <li><a href="#">Tempus Magna</a></li>
+                                    <li><a href="#">Feugiat Veroeros</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Maximus Erat</a></li>
+                            <li><a href="#">Sapien Mauris</a></li>
+                            <li><a href="#">Amet Lacinia</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Section -->
+                    <section>
+                        <header class="major">
+                            <h2>Ante interdum</h2>
+                        </header>
+                        <div class="mini-posts">
+                            <article>
+                                <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                            </article>
+                            <article>
+                                <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                            </article>
+                            <article>
+                                <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                            </article>
+                        </div>
+                        <ul class="actions">
+                            <li><a href="#" class="button">More</a></li>
+                        </ul>
+                    </section>
+
+                    <!-- Section -->
+                    <section>
+                        <header class="major">
+                            <h2>Get in touch</h2>
+                        </header>
+                        <p>Text.</p>
+                        <ul class="contact">
+                            <li class="fa-envelope-o"><a href="#">{{ values.author.email }}</a></li>
+                            <li class="fa-phone">{{ values.author.phone }}</li>
+                        </ul>
+                    </section>
+
+                    <footer>
+                        <p>&copy; {{ year }} - Michael Hoovler, Data BuildR LLC</p>
+                    </footer>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="/static/scripts/jquery-1.10.2.js"></script>
+        <script src="/static/scripts/bootstrap.js"></script>
+        <script src="/static/scripts/respond.js"></script>
+        <script src="/static/scripts/jquery-1.10.2.min.js"></script>
+        <script src="/static/scripts/browser.min.js"></script>
+        <script src="/static/scripts/breakpoints.min.js"></script>
+        <script src="/static/scripts/util.js"></script>
+        <script src="/static/scripts/main.js"></script>
 </body>
 </html>
