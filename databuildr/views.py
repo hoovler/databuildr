@@ -6,17 +6,23 @@ from datetime import datetime
 from flask import render_template
 from databuildr import app
 
-pathTo = {
-    'index': 'index.html',
-    'experience': 'experience.html',
-    'education': 'education.html',
-    'skills': 'skills.html',
-    'contact': 'contact.html',
-    'sidebar': 'snippets/sidebar.html'
+templates = {
+    'index': {
+        'file':'index.html',
+        'title': 'Datavangelist Home'
+    }
+}
+
+directories = {
+    'imageDir': 'static/images/',
+    'cssDir': 'static/content/',
+    'fontDir': 'static/fonts/',
+    'scriptDir': 'static/scripts/',
+    'templateDir': 'templates/'
 }
 
 siteMeta = {
-    'title': 'The Datavangelist',
+    'title': 'data.buildR(...)',
     'author': {
         'name': 'Michael Hoovler',
         'email':'architect@databuildr.com',
@@ -29,58 +35,19 @@ siteMeta = {
 def home():
     """Renders the home page."""
     return render_template(
-        pathTo['index'],
-        title='Home Page',
+        templates['index']['file'],
+        title=templates['index']['title'],
         year=datetime.now().year,
-        values=siteMeta
+        values=siteMeta,
+        dirs=directories
     )
 
-@app.route('/experience')
-def experience():
-    """Renders the experience page."""
-    return render_template(
-        pathTo['experience'],
-        title='Experience',
-        year=datetime.now().year,
-        message='experience'
-    )
-
-@app.route('/education')
-def education():
-    """Renders the about page."""
-    return render_template(
-        pathTo['education'],
-        title='Education',
-        year=datetime.now().year,
-        message='education'
-    )
-
-@app.route('/skills')
-def skills():
-    """Renders the skills page."""
-    return render_template(
-        pathTo['skills'],
-        title='Skills',
-        year=datetime.now().year,
-        message='skills'
-    )
-
-@app.route('/portfolio')
-def portfolio():
-    """Renders the portfolio page."""
-    return render_template(
-        'portfolio.html',
-        title='Portfolio',
-        year=datetime.now().year,
-        message='A sample of my work...'
-    )
-
-@app.route('/contact')
-def contact():
-    """Renders the contact page."""
-    return render_template(
-        pathTo['contact'],
-        title='Contact',
-        year=datetime.now().year,
-        message='Your contact page.'
-    )
+#@app.route('/experience')
+#def experience():
+#    """Renders the experience page."""
+#    return render_template(
+#        pathTo['experience'],
+#        title='Experience',
+#        year=datetime.now().year,
+#        message='experience'
+#    )

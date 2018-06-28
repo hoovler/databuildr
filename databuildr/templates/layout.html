@@ -3,14 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>{{ title }} - My Flask Application</title>
+    <title>{{  values.title }}</title>
     <link rel="stylesheet" href="static/content/main.css" />
-    <!--<script src="/static/scripts/modernizr-2.6.2.js"></script>-->
-    <script src="/static/scripts/jquery-1.10.2.min.js"></script>
-    <script src="/static/scripts/browser.min.js"></script>
-    <script src="/static/scripts/breakpoints.min.js"></script>
-    <script src="/static/scripts/util.js"></script>
-    <script src="/static/scripts/main.js"></script>
 </head>
 
 <body class="is-preload">
@@ -22,6 +16,8 @@
         <div id="main">
 
             {% block content %}{% endblock %}
+            
+        </div>
 
             <!-- Sidebar -->
             <div id="sidebar">
@@ -41,18 +37,18 @@
                         </header>
                         <ul>
                             <li><a href="{{ url_for('home') }}">Home</a></li>
-                            <li><a href="{{ url_for('experience') }}">Experience</a></li>
-                            <li><a href="{{ url_for('education') }}">Education</a></li>
-                            <li><a href="{{ url_for('skills') }}">Skills</a></li>
-                            <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
-                            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                            <li><a href="{{ url_for('home') }}">Experience</a></li>
+                            <li><a href="{{ url_for('home') }}">Education</a></li>
+                            <li><a href="{{ url_for('home') }}">Skills</a></li>
+                            <li><a href="{{ url_for('home') }}">Portfolio</a></li>
+                            <li><a href="{{ url_for('home') }}">Contact</a></li>
                             <li>
                                 <span class="opener">Portfolio</span>
                                 <ul>
-                                    <li><a href="{{ url_for('portfolio') }}">Software Engineering</a></li>
-                                    <li><a href="{{ url_for('portfolio') }}">Data Engineering</a></li>
-                                    <li><a href="{{ url_for('portfolio') }}">Technical Consulting</a></li>
-                                    <li><a href="{{ url_for('portfolio') }}">Systems Administration</a></li>
+                                    <li><a href="{{ url_for('home') }}">Software Engineering</a></li>
+                                    <li><a href="{{ url_for('home') }}">Data Engineering</a></li>
+                                    <li><a href="{{ url_for('home') }}">Technical Consulting</a></li>
+                                    <li><a href="{{ url_for('home') }}">Systems Administration</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Etiam Dolore</a></li>
@@ -79,15 +75,15 @@
                         </header>
                         <div class="mini-posts">
                             <article>
-                                <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                                <a href="#" class="image"><img src="{{ dirs.imageDir }}pic07.jpg" alt="" /></a>
                                 <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
                             </article>
                             <article>
-                                <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                                <a href="#" class="image"><img src="{{ dirs.imageDir }}pic08.jpg" alt="" /></a>
                                 <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
                             </article>
                             <article>
-                                <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                                <a href="#" class="image"><img src="{{ dirs.imageDir }}pic09.jpg" alt="" /></a>
                                 <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
                             </article>
                         </div>
@@ -116,13 +112,11 @@
             </div>
         </div>
 
-        <script src="/static/scripts/jquery-1.10.2.js"></script>
-        <script src="/static/scripts/bootstrap.js"></script>
-        <script src="/static/scripts/respond.js"></script>
-        <script src="/static/scripts/jquery-1.10.2.min.js"></script>
-        <script src="/static/scripts/browser.min.js"></script>
-        <script src="/static/scripts/breakpoints.min.js"></script>
-        <script src="/static/scripts/util.js"></script>
-        <script src="/static/scripts/main.js"></script>
+    <script src="/static/scripts/jquery-1.10.2.min.js"></script>
+    <script src="/static/scripts/browser.min.js"></script>
+    <script src="/static/scripts/breakpoints.min.js"></script>
+    <script src="/static/scripts/util.js"></script>
+    <script src="/static/scripts/main.js"></script>
+
 </body>
 </html>
