@@ -22,7 +22,7 @@ directories = {
 }
 
 siteMeta = {
-    'title': 'data.buildR(...)',
+    'title': 'data.buildr(...)',
     'author': {
         'name': 'Michael Hoovler',
         'email':'architect@databuildr.com',
