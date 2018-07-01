@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>{{  values.title }}</title>
+    <title>{{ content.layout.title }}</title>
     <link rel="stylesheet" href="static/content/main.css" />
 </head>
 
@@ -15,8 +15,23 @@
         <!-- Main -->
         <div id="main">
 
-            {% block content %}{% endblock %}
-            
+            <div class="inner">
+                
+                <header id="header">
+                    <a href="{{ url_for('home') }}" class="logo"><strong>{{ content.layout.title }}</strong> by {{ content.layout.name }}</a>
+                    <ul class="icons">
+                        <li><a href="{{ content.links.twitter }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="{{ content.links.medium }}" class="icon fa-medium"><span class="label">Medium</span></a></li>
+                    </ul>
+                </header>
+
+                {% block content %}{% endblock %}
+
+            </div>
+
         </div>
 
             <!-- Sidebar -->
@@ -40,7 +55,7 @@
                             <li><a href="{{ url_for('home') }}">Experience</a></li>
                             <li><a href="{{ url_for('home') }}">Education</a></li>
                             <li><a href="{{ url_for('home') }}">Skills</a></li>
-                            <li><a href="{{ url_for('home') }}">Portfolio</a></li>
+                            <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
                             <li><a href="{{ url_for('home') }}">Contact</a></li>
                             <li>
                                 <span class="opener">Portfolio</span>
@@ -75,15 +90,15 @@
                         </header>
                         <div class="mini-posts">
                             <article>
-                                <a href="#" class="image"><img src="{{ dirs.imageDir }}pic07.jpg" alt="" /></a>
+                                <a href="#" class="image"><img src="{{ content.dirs.images }}pic07.jpg" alt="" /></a>
                                 <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
                             </article>
                             <article>
-                                <a href="#" class="image"><img src="{{ dirs.imageDir }}pic08.jpg" alt="" /></a>
+                                <a href="#" class="image"><img src="{{ content.dirs.images }}pic08.jpg" alt="" /></a>
                                 <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
                             </article>
                             <article>
-                                <a href="#" class="image"><img src="{{ dirs.imageDir }}pic09.jpg" alt="" /></a>
+                                <a href="#" class="image"><img src="{{ content.dirs.images }}pic09.jpg" alt="" /></a>
                                 <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
                             </article>
                         </div>
@@ -99,13 +114,13 @@
                         </header>
                         <p>Text.</p>
                         <ul class="contact">
-                            <li class="fa-envelope-o"><a href="#">{{ values.author.email }}</a></li>
-                            <li class="fa-phone">{{ values.author.phone }}</li>
+                            <li class="fa-envelope-o"><a href="#">{{ content.layout.email }}</a></li>
+                            <li class="fa-phone">{{ content.layout.phone }}</li>
                         </ul>
                     </section>
 
                     <footer>
-                        <p>&copy; {{ year }} - Michael Hoovler, Data BuildR LLC</p>
+                        <p>&copy; {{ content.layout.year }} - Michael Hoovler, Data BuildR LLC</p>
                     </footer>
 
                 </div>

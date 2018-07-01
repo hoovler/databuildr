@@ -28,6 +28,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="databuildr\globalvars.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="databuildr\__init__.py" />
     <Compile Include="databuildr\views.py" />
@@ -58,6 +61,7 @@
     <Content Include="databuildr\static\fonts\fontawesome-webfont.woff" />
     <Content Include="databuildr\static\fonts\fontawesome-webfont.woff2" />
     <Content Include="databuildr\static\fonts\FontAwesome.otf" />
+    <Content Include="databuildr\static\images\dataPuzzle.png" />
     <Content Include="databuildr\static\images\pic01.jpg" />
     <Content Include="databuildr\static\images\pic02.jpg" />
     <Content Include="databuildr\static\images\pic03.jpg" />
@@ -69,6 +73,7 @@
     <Content Include="databuildr\static\images\pic09.jpg" />
     <Content Include="databuildr\static\images\pic10.jpg" />
     <Content Include="databuildr\static\images\pic11.jpg" />
+    <Content Include="databuildr\static\images\pic12.png" />
     <Content Include="databuildr\static\sass\base\_page.scss" />
     <Content Include="databuildr\static\sass\base\_reset.scss" />
     <Content Include="databuildr\static\sass\base\_typography.scss" />
@@ -107,6 +112,7 @@
     <Content Include="databuildr\static\scripts\main.js" />
     <Content Include="databuildr\static\scripts\util.js" />
     <Content Include="databuildr\templates\archive\contact.html" />
+    <Content Include="databuildr\templates\portfolio.html" />
     <Content Include="databuildr\templates\index.html" />
     <Content Include="databuildr\templates\archive\experience.html" />
     <Content Include="databuildr\templates\archive\education.html" />
@@ -114,6 +120,7 @@
     <Content Include="databuildr\templates\archive\skills.html" />
     <Content Include="databuildr\templates\archive\zzzindex.html" />
     <Content Include="databuildr\templates\archive\zzzportfolio.html" />
+    <Content Include="databuildr\templates\navbar.html" />
     <Content Include="requirements.txt" />
     <Content Include="databuildr\static\content\bootstrap.css" />
     <Content Include="databuildr\static\content\bootstrap.min.css" />
