@@ -28,12 +28,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="databuildr\texas.py" />
+    <Compile Include="databuildr\brewer.py" />
+    <Compile Include="databuildr\jitter.py" />
+    <Compile Include="databuildr\image_rgba.py" />
     <Compile Include="databuildr\globalvars.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="databuildr\module1.py">
+    <Compile Include="databuildr\burton.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="databuildr\unemployment.py" />
+    <Compile Include="databuildr\us_counties.py" />
     <Compile Include="runserver.py" />
     <Compile Include="databuildr\__init__.py" />
     <Compile Include="databuildr\views.py" />
@@ -42,6 +48,8 @@
     <Folder Include="databuildr\" />
     <Folder Include="databuildr\static\" />
     <Folder Include="databuildr\static\content\" />
+    <Folder Include="databuildr\static\data\" />
+    <Folder Include="databuildr\static\data\icons\" />
     <Folder Include="databuildr\static\fonts\" />
     <Folder Include="databuildr\static\images\" />
     <Folder Include="databuildr\static\text\" />
@@ -59,6 +67,31 @@
     <Content Include="databuildr\favicon.svg" />
     <Content Include="databuildr\static\content\font-awesome.min.css" />
     <Content Include="databuildr\static\content\main.css" />
+    <Content Include="databuildr\static\data\auto-mpg.csv" />
+    <Content Include="databuildr\static\data\auto-mpg2.csv" />
+    <Content Include="databuildr\static\data\browsers_nov_2013.csv" />
+    <Content Include="databuildr\static\data\commits.txt" />
+    <Content Include="databuildr\static\data\daylight_warsaw_2013.csv" />
+    <Content Include="databuildr\static\data\elements.csv" />
+    <Content Include="databuildr\static\data\icons\chrome_32x32.png" />
+    <Content Include="databuildr\static\data\icons\firefox_32x32.png" />
+    <Content Include="databuildr\static\data\icons\ie_32x32.png" />
+    <Content Include="databuildr\static\data\icons\opera_32x32.png" />
+    <Content Include="databuildr\static\data\icons\safari_32x32.png" />
+    <Content Include="databuildr\static\data\iris.csv" />
+    <Content Include="databuildr\static\data\les_mis.json" />
+    <Content Include="databuildr\static\data\numberly.csv" />
+    <Content Include="databuildr\static\data\obiszow_mtb_xcm.csv" />
+    <Content Include="databuildr\static\data\olympics2014.json" />
+    <Content Include="databuildr\static\data\percent-bachelors-degrees-women-usa.csv" />
+    <Content Include="databuildr\static\data\probly.csv" />
+    <Content Include="databuildr\static\data\sample_geojson.geojson" />
+    <Content Include="databuildr\static\data\sea_surface_temperature.csv" />
+    <Content Include="databuildr\static\data\sprint.csv" />
+    <Content Include="databuildr\static\data\unemployment1948.csv" />
+    <Content Include="databuildr\static\data\US Regions State Boundaries.csv" />
+    <Content Include="databuildr\static\data\USHolidays.ics" />
+    <Content Include="databuildr\static\data\us_marriages_divorces.csv" />
     <Content Include="databuildr\static\fonts\fa-brands-400.eot" />
     <Content Include="databuildr\static\fonts\fa-brands-400.svg" />
     <Content Include="databuildr\static\fonts\fa-brands-400.ttf" />
