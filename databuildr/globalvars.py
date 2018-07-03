@@ -1,9 +1,8 @@
 from datetime import datetime
+
 import numpy as np
 import pandas as pd
-import csv
-import os
-import glob
+import csv, os, glob
 
 dirs = {
     'images': 'static' + os.sep + 'images' + os.sep,
@@ -61,7 +60,7 @@ class GlobalVars:
             'year': datetime.now().year
         },
         'index': {
-            'title': 'data.buildR(...)',
+            'title': 'Data BuildR, LLC',
             'tagline': 'Opposing information entropy through the power of Charismatic Datavangelism.',
             'opener': 'Building secure, efficient, data-driven and informed environments in the healthcare industry, federal government, ' +
                 'and private sector since 2005 with unrivaled creativity, adept analysis, and an inimitable calling and life-long commitment ' +

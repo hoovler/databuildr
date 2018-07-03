@@ -1,4 +1,4 @@
-achievement_id,job_id,descr_achievement
+achievement_id,job_id,achievement
 1,2,"Successful design, development, deployment, and PL-2 accreditation of an agile data architecture and associated framework that met presidential directives related to data discovery, and resolved multiple compliance and regulatory issues"
 2,2,"Custom development, deployment, and PL-2 accreditation of a robust data integration and business intelligence suite, which was declared the enterprise-wide solution for all ETL and BI efforts at NGIC."
 3,2,"The design, engineering, and deployment of the data ingest pipeline for external agency assessments, data, and other forms of finished intelligence information."

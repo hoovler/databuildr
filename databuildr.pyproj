@@ -31,6 +31,9 @@
     <Compile Include="databuildr\globalvars.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="databuildr\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="databuildr\__init__.py" />
     <Compile Include="databuildr\views.py" />
@@ -56,6 +59,21 @@
     <Content Include="databuildr\favicon.svg" />
     <Content Include="databuildr\static\content\font-awesome.min.css" />
     <Content Include="databuildr\static\content\main.css" />
+    <Content Include="databuildr\static\fonts\fa-brands-400.eot" />
+    <Content Include="databuildr\static\fonts\fa-brands-400.svg" />
+    <Content Include="databuildr\static\fonts\fa-brands-400.ttf" />
+    <Content Include="databuildr\static\fonts\fa-brands-400.woff" />
+    <Content Include="databuildr\static\fonts\fa-brands-400.woff2" />
+    <Content Include="databuildr\static\fonts\fa-regular-400.eot" />
+    <Content Include="databuildr\static\fonts\fa-regular-400.svg" />
+    <Content Include="databuildr\static\fonts\fa-regular-400.ttf" />
+    <Content Include="databuildr\static\fonts\fa-regular-400.woff" />
+    <Content Include="databuildr\static\fonts\fa-regular-400.woff2" />
+    <Content Include="databuildr\static\fonts\fa-solid-900.eot" />
+    <Content Include="databuildr\static\fonts\fa-solid-900.svg" />
+    <Content Include="databuildr\static\fonts\fa-solid-900.ttf" />
+    <Content Include="databuildr\static\fonts\fa-solid-900.woff" />
+    <Content Include="databuildr\static\fonts\fa-solid-900.woff2" />
     <Content Include="databuildr\static\fonts\fontawesome-webfont.eot" />
     <Content Include="databuildr\static\fonts\fontawesome-webfont.svg" />
     <Content Include="databuildr\static\fonts\fontawesome-webfont.ttf" />
@@ -109,6 +127,7 @@
     <Content Include="databuildr\static\sass\libs\_vars.scss" />
     <Content Include="databuildr\static\sass\libs\_vendor.scss" />
     <Content Include="databuildr\static\sass\main.scss" />
+    <Content Include="databuildr\static\scripts\fa-all.js" />
     <Content Include="databuildr\static\scripts\breakpoints.min.js" />
     <Content Include="databuildr\static\scripts\browser.min.js" />
     <Content Include="databuildr\static\scripts\main.js" />

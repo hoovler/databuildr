@@ -1,4 +1,4 @@
-responsibility_id,role_id,descr_responsibility
+responsibility_id,role_id,responsibility
 1,1,Data manipulation
 2,1,Data pipeline design & implementation
 3,1,ETL transformation architecture & implementation
@@ -40,3 +40,22 @@ responsibility_id,role_id,descr_responsibility
 39,3,"Developing statistical, mathematical, and predictive models to support mission and operations staff in making data-driven and informed decisions"
 40,3,Acting in the capacity of a database administrator (DBA) on several major projects
 41,3,Acting in the capacity of a Program Lead for enterprise data maturity assessments & data governance initiatives
+42,6,"Setting up, installing, and maintaining servers"
+43,6,"Web applications installation, tuning, optimization, and maintenance"
+44,6,"Content management systems (CMS) installation, configuration, administration"
+45,6,Planning and implementing periodic vendor software upgrades and product releases
+46,6,Pre- and post-testing software upgrades procedures 
+47,6,Designing methods for software upgrade integration into existing operating system architecture
+48,6,Data mining and extraction efforts for performance monitor reporting and other maintenance tasks
+49,6,"Workflow design, development, and implementation"
+50,6,24x7 tier III customer support
+51,5,"Building security constraints and ACLs around clinical patient information containing private health information (PHI), personally identifiable information (PII), and unblinded clinical study data within the company's content management system"
+52,5,Customizing and developing against proprietary CMS applications
+53,5,"Designing and developing CMS application Web front-end, application server mid-tier, and database backend"
+54,5,Reporting tool development and data collection scripting
+55,5,Performance monitor scripting
+56,5,"Developing data mining and extraction scripts for monitoring, reporting, and maintenance"
+57,5,"Gathering, translating, and executing client requirements"
+58,5,Serving in the capacity as a technical team lead for several large and small scale projects
+59,5,Writing Gantt chart timelines and other Waterfall SDLC documentation
+60,5,Maintaining a detailed understanding of and experience with all levels of the software engineering life cycle
