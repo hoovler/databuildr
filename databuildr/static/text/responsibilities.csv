@@ -1,0 +1,42 @@
+responsibility_id,role_id,descr_responsibility
+1,1,Data manipulation
+2,1,Data pipeline design & implementation
+3,1,ETL transformation architecture & implementation
+4,1,"Data profiling, analysis, and reporting development"
+5,1,Data profiling to research and understand client data domain
+6,1,"Streaming data extraction, processing, transformation, and integration"
+7,1,Data visualization design and development
+8,1,Development of new data models and ontologies
+9,1,"Data discovery, extraction, cleansing, transformation, and integration"
+10,2,AWS architecture design & implementation
+11,2,Software applications design & development
+12,2,Guidance on open-source machine learning applications
+13,2,Guidance for data ETL efforts
+14,2,Cloud-hosted infrastructure capability research & whitepaper reporting
+15,2,"Research, profiling, and fact-finding to define scope and objectives from abstract customer requirements "
+16,2,New resource discovery and data refinement to support customer requirements
+17,2,Open-source software extension and customization
+18,2,"Design, development, & construction of AWS SaaS-based systems"
+19,4,Address the data-related technical concerns from analysts and leadership
+20,4,Recommend software to facilitate Business Intelligence and Data Visualization solutions
+21,4,"Collaborate with external agencies, industry partners, and academic institutions to gain valuable insight into and implement a new, massively-scaled data maturity assessment, data governance, master data & metadata cataloguing, and data normalization effort"
+22,4,"Briefings, advice, and updates to leadership for complex projects"
+23,4,Operating as government contact and senior technical lead for high-visibility machine learning initiative
+24,4,Member of Commander's Council on Data Stewardship
+25,4,"Remaining up-to-date and apprised of all NGIC center initiatives that had any data-producing system, and helping most of them make informed, data-driven decisions that supported NGIC's mission by providing analytics and reporting on the data produced"
+26,4,Adoption and promotion critical infrastructure Agile development and DevOps for high-assurance environments
+27,3,Creatively tailoring data visualization and reporting formats as appropriate for the target audience / stakeholder for actionable insight to be derived
+28,3,Conducting market research and analysis for business intelligence and visualization needs
+29,3,"Creating and maintaining technical ATO documentation, DoDAAF diagrams, planning data models, and other project architecture artifacts"
+30,3,"Developing data integration & visualization, business intelligence, and reporting solutions for the primary purpose of nominating new, interesting trends for further analyst investigation"
+31,3,"Writing customization, development, configuration, architecture, security, and deployment strategy design documentation for commercial data systems"
+32,3,"Writing administration, development, installation, and configuration guides"
+33,3,"Developing extract, transform, and load (ETL) jobs, reporting interfaces, and predictive analytics dashboards to support mission operations personnel"
+34,3,Reverse-engineering and modifying open-source and commercially-available software
+35,3,Designing an enterprise service bus (ESB) for business and mission data systems to establish links across existing data sources
+36,3,"Designing, documenting, and implementing agency data acquisition and integration processes"
+37,3,Designing and implementing enterprise system architectures
+38,3,Instantiating and maintaining a full dev-ops stack
+39,3,"Developing statistical, mathematical, and predictive models to support mission and operations staff in making data-driven and informed decisions"
+40,3,Acting in the capacity of a database administrator (DBA) on several major projects
+41,3,Acting in the capacity of a Program Lead for enterprise data maturity assessments & data governance initiatives

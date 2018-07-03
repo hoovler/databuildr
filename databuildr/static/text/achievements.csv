@@ -1,0 +1,21 @@
+achievement_id,job_id,descr_achievement
+1,2,"Successful design, development, deployment, and PL-2 accreditation of an agile data architecture and associated framework that met presidential directives related to data discovery, and resolved multiple compliance and regulatory issues"
+2,2,"Custom development, deployment, and PL-2 accreditation of a robust data integration and business intelligence suite, which was declared the enterprise-wide solution for all ETL and BI efforts at NGIC."
+3,2,"The design, engineering, and deployment of the data ingest pipeline for external agency assessments, data, and other forms of finished intelligence information."
+4,2,"Establishing the internal methodology for data exploration from multiple, disparate sources, allowing personnel to identify, analyze, and provide reporting on meaningful trends in response to congressional information requests and tactical intelligence assessments."
+5,2,"Developing countless data cleansing / ETL and task automation ad-hoc scripts for analysts, IT, command staff, logistics, and business operations personnel."
+6,2,A deep-learning based analytic product recommendation system.
+7,2,"An enterprise-wide, open-source solution to systemic data quality problems."
+8,2,An enterprise service bus for mission and business data.
+9,1,"Designed, developed, and implemented a dimensional data warehouse with a No-SQL back-end, data lineage preservation, graph analysis visualization and data store, entity extraction and correlation, and scheduled, batch-loaded ETL processing."
+10,1,"Created a new AWS-hosted system to facilitate geospatial, temporal, and higher-dimensional analysis of network graph data."
+11,1,Developed a streaming geospatial image data ingest pipeline for national security applications
+12,2,"Assisted social network analysts develop new statistical, mathematical and predictive models, and converted their equations into logical algorithms using R and the Reproducible Research task view"
+13,3,"Built new forms and functionality within Lawson and Databasics, PRA's financial system and time-keeping / customer billing systems, respectively"
+14,3,"Extensive development of custom functionality for PRA's content management system - including import/export functionality (batch and single form), additional metadata entry UI and algorithms, and RESTful API integration with payroll, accounts payable, and timekeeping systems - as the second iteration of the Electronic Trial Master File (eTMF2), a fully customized build of EMC Documentum "
+15,3,"Engineered the the UI and underlying mechanisms for migrating all content, metadata, and user information from eTMF1 to eTMF2"
+16,3,Developed reusable and subject-agnostic reporting UIs derived from my ad-hoc scripting and data collection efforts
+17,3,Execution and oversight of the successful migration of all artifacts from eTMF1 to eTMF2
+18,3,Saved millions of dollars due to insight provided to upper management derived from my data collection & analysis activities
+19,3,"Developed a strong rapport with customers, clients, project managers, and my chain of command due to a combination of excellent interpersonal / relational skills and a mastery of my domain of expertise"
+20,2,"Saved the US taxpayer several million dollars with just one script, which did the work of roughly 30,000 man-hours in a massive data spilliage cleanup effort"

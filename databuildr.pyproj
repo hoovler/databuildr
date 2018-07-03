@@ -41,6 +41,7 @@
     <Folder Include="databuildr\static\content\" />
     <Folder Include="databuildr\static\fonts\" />
     <Folder Include="databuildr\static\images\" />
+    <Folder Include="databuildr\static\text\" />
     <Folder Include="databuildr\static\sass\" />
     <Folder Include="databuildr\static\sass\base\" />
     <Folder Include="databuildr\static\sass\components\" />
@@ -61,6 +62,7 @@
     <Content Include="databuildr\static\fonts\fontawesome-webfont.woff" />
     <Content Include="databuildr\static\fonts\fontawesome-webfont.woff2" />
     <Content Include="databuildr\static\fonts\FontAwesome.otf" />
+    <Content Include="databuildr\static\images\binary-full.png" />
     <Content Include="databuildr\static\images\dataPuzzle.png" />
     <Content Include="databuildr\static\images\pic01.jpg" />
     <Content Include="databuildr\static\images\pic02.jpg" />
@@ -111,6 +113,10 @@
     <Content Include="databuildr\static\scripts\browser.min.js" />
     <Content Include="databuildr\static\scripts\main.js" />
     <Content Include="databuildr\static\scripts\util.js" />
+    <Content Include="databuildr\static\text\achievements.csv" />
+    <Content Include="databuildr\static\text\jobs.csv" />
+    <Content Include="databuildr\static\text\responsibilities.csv" />
+    <Content Include="databuildr\static\text\roles.csv" />
     <Content Include="databuildr\templates\archive\contact.html" />
     <Content Include="databuildr\templates\portfolio.html" />
     <Content Include="databuildr\templates\index.html" />
@@ -120,7 +126,6 @@
     <Content Include="databuildr\templates\archive\skills.html" />
     <Content Include="databuildr\templates\archive\zzzindex.html" />
     <Content Include="databuildr\templates\archive\zzzportfolio.html" />
-    <Content Include="databuildr\templates\navbar.html" />
     <Content Include="requirements.txt" />
     <Content Include="databuildr\static\content\bootstrap.css" />
     <Content Include="databuildr\static\content\bootstrap.min.css" />
